@@ -1,6 +1,5 @@
 # Pull a git repo with this docker container
-
-This is an ARM compatible docker container to be used to pull a git repo mounted in the `/config` folder.
+This ARM compatible container can be used to pull the latest version for a git repository. The repository must be mounted into the `/config` folder within the container.
 
 Simply run it and it will perform the following commands
 
