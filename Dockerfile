@@ -1,4 +1,6 @@
-FROM hypriot/rpi-alpine
+FROM alpine:3.8
+
+COPY tmp/qemu-arm-static /usr/bin/qemu-arm-static
 
 RUN apk --update add git openssh && \
     rm -rf /var/lib/apt/lists/* && \
