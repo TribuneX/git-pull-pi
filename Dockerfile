@@ -1,4 +1,4 @@
-FROM resin/qemux86-64-alpine:3.8
+FROM hypriot/rpi-alpine
 
 RUN apk --update add git openssh && \
     rm -rf /var/lib/apt/lists/* && \
