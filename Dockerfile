@@ -1,6 +1,6 @@
 FROM multiarch/alpine:armhf-v3.8 
 
-RUN apk --update add git openssh && \
+RUN apk --update add git && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
