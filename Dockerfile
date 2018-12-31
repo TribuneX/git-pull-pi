@@ -1,8 +1,7 @@
 FROM multiarch/alpine:armhf-v3.8 
 
-RUN apk --update add git && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm /var/cache/apk/*
+RUN apk --update --no-cache add git && \
+    rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
 
 COPY run.sh .
 RUN chmod +x run.sh
